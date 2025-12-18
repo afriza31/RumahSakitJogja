@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.RumahSakitJogja" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Boleh dihapus kalau mau pakai default Material3 -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorSecondary">@color/teal_200</item>
+    </style>
+
+</resources>

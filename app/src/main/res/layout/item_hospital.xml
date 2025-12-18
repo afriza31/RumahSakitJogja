@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:padding="18dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        logo-->
+        <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginBottom="12dp"/>
+
+        <!-- Nama -->
+        <TextView
+            android:id="@+id/tv_name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Rumah Sakit" />
+
+        <!-- Alamat singkat + kecamatan -->
+        <TextView
+            android:id="@+id/tv_address"
+            android:textColor="#666"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat singkat • Sleman" />
+
+        <!-- Status 24 jam + layanan ringkas -->
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_is24h"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:text="24 Jam"
+                android:background="@drawable/bg_badge"
+                android:textColor="#333"
+                android:textSize="12sp"
+                android:layout_marginEnd="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_services"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:text="UGD • Poli Anak"
+                android:background="@drawable/bg_badge"
+                android:textColor="#333"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Aksi -->
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_detail"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="Detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

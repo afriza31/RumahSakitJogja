@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header: judul kiri, tombol kanan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Detail Rumah Sakit"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_back"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kembali" />
+        </LinearLayout>
+
+
+        <!-- Logo / Icon -->
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_marginTop="12dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <!-- Nama RS -->
+        <TextView
+            android:id="@+id/tv_hospital_name"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="RSUP Dr. Sardjito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Alamat lengkap -->
+        <TextView
+            android:id="@+id/tv_full_address"
+            android:layout_marginTop="4dp"
+            android:textColor="#666"
+            android:text="Jl. Kesehatan No.1, Sinduadi, Sleman, DIY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Kecamatan + Status buka -->
+        <TextView
+            android:id="@+id/tv_district_open"
+            android:layout_marginTop="6dp"
+            android:text="Kecamatan: Sleman • 24 Jam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Layanan / Poli -->
+        <TextView
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:text="Poli / Layanan:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_services_all"
+            android:layout_marginTop="4dp"
+            android:text="UGD, Poli Anak, Poli Jantung, Farmasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Jam buka -->
+        <TextView
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:text="Jam Buka:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_open_hours"
+            android:layout_marginTop="4dp"
+            android:text="Senin–Jumat 08.00–16.00, Sabtu 08.00–12.00, Minggu Tutup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Kontak -->
+        <TextView
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:text="Kontak:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_marginTop="4dp"
+            android:text="0274-123456"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Aksi: Hubungi / Lihat di Peta / Favorit -->
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_call"
+                android:layout_marginEnd="8dp"
+                android:text="Hubungi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_map"
+                android:layout_marginEnd="8dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="Lihat di Peta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_favorite"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="⭐ Favorit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

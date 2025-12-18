@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Rumah Sakit Yogyakarta</string>
+    <string name="about_description">
+        Aplikasi RumahSakitJogja membantu pengguna mencari dan melihat informasi rumah sakit di wilayah Yogyakarta, seperti alamat, layanan, jam buka, nomor telepon, serta lokasi pada peta. Pengguna juga dapat menandai rumah sakit favorit untuk akses lebih cepat.
+    </string>
+    <string name="about_data_source">
+        Sumber data: Rumah Sakit yang ada di Yogyakarta
+    </string>
+    <string name="about_developer">
+        Dikembangkan oleh: Muhammad Naufal Afriza dan Muhammad Nur Rasyid
+    </string>
+</resources>

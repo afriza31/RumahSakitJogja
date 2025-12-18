@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_cari"
+        android:title="Cari RS"
+        android:icon="@drawable/baseline_search_24" />
+    <item
+        android:id="@+id/nav_daftar"
+        android:title="Daftar"
+        android:icon="@drawable/outline_add_location_24" />
+    <item
+        android:id="@+id/nav_favorit"
+        android:title="Favorit"
+        android:icon="@drawable/outline_all_match_24" />
+    <item
+        android:id="@+id/nav_tentang"
+        android:title="Tentang"
+        android:icon="@drawable/outline_account_circle_24" />
+</menu>

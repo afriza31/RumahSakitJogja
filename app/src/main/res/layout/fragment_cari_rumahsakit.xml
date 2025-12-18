@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="?attr/colorSurface"
+    tools:context=".CariRumahSakitFragment">
+
+    <!-- AppBar -->
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="?attr/colorSurface"
+            android:layout_marginTop="16dp">
+
+        <ImageView
+                android:id="@+id/iv_banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/banner_logo_hor_remove"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter" />
+    </FrameLayout>
+    <!-- Google Map: gunakan FragmentContainerView -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="MissingClass" />
+
+    <!-- Tombol refresh data (opsional) -->
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btn_refresh"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Muat / Perbarui Data"-->
+<!--        />-->
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <com.google.android.material.appbar.MaterialToolbar-->
+<!--        android:id="@+id/toolbar_list"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:title="Daftar Rumah Sakit"-->
+<!--        app:navigationIcon="@mipmap/ic_launcher" />-->
+
+    <!-- Search -->
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="      Cari nama atau layanan…"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+
+            app:startIconDrawable="@drawable/baseline_search_24"
+            app:startIconTint="#BEA1EA"
+            app:boxBackgroundMode="filled"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeColor="@android:color/transparent"
+            app:boxStrokeWidthFocused="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <!-- Switch 24 jam -->
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/sw_24h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="16dp"
+        android:text="Tampilkan yang 24 Jam saja" />
+
+    <!-- Daftar RS -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_hospitals"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
