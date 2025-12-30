@@ -11,6 +11,7 @@ import androidx.lifecycle.repeatOnLifecycle
 import com.example.rumahsakitjogja.R
 import com.example.rumahsakitjogja.data.local.HospitalEntity
 import com.example.rumahsakitjogja.ui.viewmodel.RumahSakitViewModel
+import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
